@@ -12,6 +12,9 @@ export class CounterComponent implements OnInit {
   max: number;
 
   @Input()
+  min: number;
+
+  @Input()
   count: number = 0;
   test: number = 0;
   constructor() {}
@@ -24,7 +27,13 @@ export class CounterComponent implements OnInit {
     }
   }
 
-  decrement() {}
+  decrement() {
+    if (this.min !== undefined) {
+      this.count = this.count > this.min ? --this.count : this.min;
+    } else {
+      --this.count;
+    }
+  }
 
   ngOnInit() {}
 }
