@@ -9,21 +9,23 @@ export class CounterComponent implements OnInit {
   @Input()
   label: string = "contatore";
   @Input()
-  max: number;
+  max: number
 
   @Input()
-  min: number;
+  min: number
+ 
+  @Input()
+  step = 1
 
   @Input()
   count: number = 0;
-  test: number = 0;
   constructor() {}
 
   increment() {
     if (this.max !== undefined) {
-      this.count = this.count < this.max ? ++this.count : this.max;
+      this.count = this.count < this.max ? this.count+=this.step : this.max;
     } else {
-      ++this.count;
+      console.log(this.count += this.step);
     }
   }
 
