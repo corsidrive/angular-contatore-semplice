@@ -16,3 +16,8 @@ Inizializzare più contatori con diverse caratteristiche impostate dall'esterno.
 - valore minimo
 - step di incremento
 
+### step to passing data to component.
+
+- add a property to class component if not exists
+- add the input decorator in the class property
+
