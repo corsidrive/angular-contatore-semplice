@@ -7,7 +7,7 @@
 
 Semplice contatore che gestisce il suo stato interno
 
-## 02 - passing data to component
+## 02 - passing data to child component
 
 Inizializzare più contatori con diverse caratteristiche impostate dall'esterno.
 
@@ -20,4 +20,8 @@ Inizializzare più contatori con diverse caratteristiche impostate dall'esterno.
 
 - add a property to class component if not exists
 - add the input decorator in the class property
+
+## 03 - passing data to parent component
+
+
 
